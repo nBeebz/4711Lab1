@@ -34,7 +34,16 @@ $second->add_grade(80);
 $second->add_grade(50);
 $students['a456'] = $second;
 
+$third = new Student();
+$third->lname = "Bhatti";
+$third->fname = "Nav";
+$third->add_email('main','bhatti.nav@gmail.com');
+$third->add_email('school','nbhatti3@my.bcit.ca');
+$third->add_grade(92);
+$third->add_grade(87);
+$third->add_grade(83);
+$students['a008'] = $third;
+
 echo $first->toString();
-
 echo $second->toString();
-
+echo $third->toString();
