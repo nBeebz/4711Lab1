@@ -34,5 +34,11 @@ class Student
     {
         $result = $this->fname.' '.$this->lname;
         $result .= ' ('.$this->average().")\n";
+        foreach( $this->emails as $who=>$addr )
+        {
+            $result .= $who.': '.$addr."\n";
+        }
+        $result .= "\n";
+        return '<pre>'.$result.'</pre>';
     }
 }
